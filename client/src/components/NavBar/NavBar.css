@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a8baeb99;
+  z-index: 1;
+  box-shadow: -1px 3px 6px -1px rgba(67, 73, 87, 0.527);
+  height: 80px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.head {
+  padding: 0px;
+  margin-top: -1px;
+  margin-left: -1%;
+  width: 200px;
+  position: relative;
+  width: 200px;
+  height: 80px;
+  align-self: center;
+}
+
+.createPoke {
+  margin-left: 300px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.createPoke button {
+  margin: 0 1rem;
+  border: none;
+  font-family: "Ubuntu";
+  color: #db3d4b;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #faf8f800;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 50px;
+  
+}

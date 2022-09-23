@@ -1,0 +1,51 @@
+.background {
+  background: url("../../assets/Poke-Landing.jpg");
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.poke-logo {
+  height: 200px;
+  width: 250;
+  margin-bottom: 10px;
+}
+
+.btn{
+  background-image:url('../../assets/Pokeball.jpg');
+  height: 180px;
+    width: 180px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 220% auto;
+    animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+  cursor: pointer;
+}
+
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+

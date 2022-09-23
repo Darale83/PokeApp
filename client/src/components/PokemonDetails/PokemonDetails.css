@@ -1,0 +1,90 @@
+.box {
+  overflow: hidden;
+}
+
+.detailsWrapper {
+  background-image: url("../../assets/DetailImage.webp");
+  text-align: center;
+  font-family: "Lusitana", serif;
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  padding: 100px 0;
+}
+
+.detailsCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(210, 215, 219, 0.589);
+  border-radius: 10px;
+  margin-left: 500px;
+  margin-top: 100px;
+  width: 600px;
+  height: 600px;
+}
+
+.detailsTitle {
+  height: 130px;
+}
+
+.detailsTitle h1 {
+  font-size: 4em;
+}
+
+.detailsImage {
+  height: 400px;
+  width: 300px;
+}
+
+.detailsInfo {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px 0 20px;
+  font-size: 25px;
+}
+
+.type-icon-container {
+  display: flex;
+}
+
+.type-icon {
+  height: 70px;
+  width: 70px;
+}
+
+.detail-button {
+  background: rgb(174, 224, 238);
+  background: radial-gradient(
+    circle,
+    rgba(174, 224, 238, 1) 0%,
+    rgba(148, 177, 233, 0.7539390756302521) 100%
+  );
+  height: 40px;
+  width: 80px;
+  outline: invert;
+  border-radius: 10px;
+  margin-top: 70px;
+  font-family: "Lusitana", serif;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+.detail-button:hover {
+  transform: scale(1.2);
+}
+
+.details-loader {
+  background-image: url("../../assets/DetailImage.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}

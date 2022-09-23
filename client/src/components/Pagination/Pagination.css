@@ -1,0 +1,48 @@
+.pagination {
+  font-family: "Lusitana", serif;
+  display: inline;
+  margin: 0 7px 0 7px;
+}
+
+.paginationBtn {
+  font-family: "Lusitana", serif;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  background: none;
+  background-color: #6a8ab3bb;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+.ulPos {
+  display: contents;
+  list-style: none;
+}
+
+.paginationBtn:hover {
+  transform: scale(1.2);
+  color: bisque;
+  background-color: rgba(13, 41, 102, 0.938);
+}
+
+.active {
+  transform: scale(1.2);
+  font-family: "Lusitana", serif;
+  font-size: 20px;
+  display: inline-block;
+  align-items: center;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  background: none;
+  background-color: rgba(13, 41, 102, 0.938);
+  cursor: pointer;
+  color: bisque;
+  background-color: rgba(13, 41, 102, 0.938);
+}
