@@ -19,12 +19,13 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require("./src/app.js");
 const { conn } = require("./src/db.js");
+const port = process.env.PORT || 3001;
 const { getAllTypes } = require("./src/utils/index");
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   getAllTypes();
-  server.listen(3001, () => {
-    console.log("%s listening at 3001"); // eslint-disable-line no-console
+  server.listen(port, () => {
+    console.log(`Server listening in port ${port}`); // eslint-disable-line no-console
   });
 });
