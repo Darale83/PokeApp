@@ -14,7 +14,7 @@ export const POKEMONS_COPY = "POKEMONS_COPY";
 export const getAllPokemons = () => {
   return async function (dispatch) {
     return await axios
-      .get("http://localhost:3001/pokemons")
+      .get("/pokemons")
 
       .then((response) => {
         if (response.data.name === "Error") {
@@ -42,7 +42,7 @@ export const getAllPokemons = () => {
 export const getAllTypes = () => {
   return async function (dispatch) {
     return await axios
-      .get("http://localhost:3001/type")
+      .get("/type")
       .then((response) => {
         if (response.data.name === "Error") {
           console.log(response);
@@ -70,7 +70,7 @@ export const pokemonCopy = () => {
 export const createPokemon = (payload) => {
   return async function (dispatch) {
     return await axios
-      .post("http://localhost:3001/pokemons", payload)
+      .post("/pokemons", payload)
       .then((response) => {
         dispatch({
           type: CREATE_POKEMON,
@@ -86,7 +86,7 @@ export const createPokemon = (payload) => {
 export const getPokemonDetails = (id) => {
   return async function (dispatch) {
     return axios
-      .get(`http://localhost:3001/pokemons/${id}`)
+      .get(`/pokemons/${id}`)
       .then((response) => {
         dispatch({
           type: GET_POKEMON_DETAIL,
@@ -106,7 +106,7 @@ export const removeDetail = () => {
 export const getPokemonByName = (name) => {
   return async function (dispatch) {
     return axios
-      .get(`http://localhost:3001/pokemons/?name=${name}`)
+      .get(`/pokemons/?name=${name}`)
       .then((response) => {
         dispatch({
           type: SEARCH_POKEMON,
