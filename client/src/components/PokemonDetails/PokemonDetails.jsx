@@ -69,7 +69,7 @@ export default function PokemonDetails() {
                         <img
                           height="80px"
                           alt="Type"
-                          src={require(`./Icons/${type}.png`).default}
+                          src={`/Icons/${type}.png`}
                         />
                       </div>
                     );

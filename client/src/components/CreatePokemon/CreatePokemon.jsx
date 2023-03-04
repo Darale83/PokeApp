@@ -341,10 +341,7 @@ export default function () {
                     type="button"
                     onClick={() => handleDeleteTypes(el)}
                   >
-                    <img
-                      alt="Type"
-                      src={require(`./Icons/${el}.png`).default}
-                    />
+                    <img alt="Type" src={`/Icons/${el}.png`} />
                   </button>
                 );
               })}
