@@ -16,7 +16,10 @@ export default function PokemonCard({ id, name, image, types, createdInDb }) {
           {types.map((t) => {
             return (
               <div key={t} className="type">
-                <img alt="Type" src={require(`./Icons/${t}.png`).default} />
+                <img
+                  alt="Type"
+                  src={require(`../../../public/${t}.png`).default}
+                />
               </div>
             );
           })}
